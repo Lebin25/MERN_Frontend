@@ -7,7 +7,7 @@ import { getUserProductWishlist } from '../features/user/userSlice';
 import { addToWishlist } from '../features/products/productSlice';
 
 const Wishlist = () => {
-   const dispatch = useDispatch()
+   const dispatch = useDispatch();
    useEffect(() => {
       dispatch(getUserProductWishlist())
    }, [])
